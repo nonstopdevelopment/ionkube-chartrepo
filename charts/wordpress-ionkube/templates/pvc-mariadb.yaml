@@ -8,6 +8,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
+  storageClassName: {{ .Values.persistence.storageClassName | quote }}
   resources:
     requests:
       storage: {{ .Values.persistence.mariadb.size }}

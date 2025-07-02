@@ -38,6 +38,7 @@ resources:
 
 # --- Persistence Configuration ---
 persistence:
+  storageClassName: "block"
   wordpress:
     enabled: true
     size: "10Gi" # User can select storage size from web app
